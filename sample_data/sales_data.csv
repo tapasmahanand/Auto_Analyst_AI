@@ -1,0 +1,404 @@
+order_date,region,product,category,units_sold,unit_price,revenue,customer_rating
+2025-01-01,South,Standing Desk,Furniture,1,499.94,499.94,3.9
+2025-01-01,North,Office Chair,Furniture,8,281.62,2252.96,3.9
+2025-01-02,South,4K Monitor,Electronics,8,442.17,3537.36,4.3
+2025-01-02,North,Wireless Mouse,Accessories,3,37.99,113.97,4.4
+2025-01-03,East,Mechanical Keyboard,Accessories,5,89.93,449.65,3.4
+2025-01-03,North,Laptop Pro 14,Electronics,10,1489.9,14899.0,4.0
+2025-01-04,West,Laptop Air 13,Electronics,9,939.84,8458.56,3.5
+2025-01-04,North,Office Chair,Furniture,10,265.76,2657.6,3.4
+2025-01-05,East,Mechanical Keyboard,Accessories,4,80.23,320.92,4.3
+2025-01-05,South,Wireless Mouse,Accessories,7,31.89,223.23,4.5
+2025-01-06,North,Standing Desk,Furniture,9,498.46,4486.14,2.8
+2025-01-06,South,4K Monitor,Electronics,4,418.85,1675.4,4.8
+2025-01-07,North,Wireless Mouse,Accessories,11,35.11,386.21,4.4
+2025-01-07,East,Office Chair,Furniture,5,238.89,1194.45,4.3
+2025-01-07,East,Laptop Pro 14,Electronics,1,1552.12,1552.12,2.9
+2025-01-08,East,Mechanical Keyboard,Accessories,11,94.45,1038.95,3.8
+2025-01-09,North,Laptop Pro 14,Electronics,1,1314.07,1314.07,3.1
+2025-01-09,East,Laptop Air 13,Electronics,3,1071.66,3214.98,4.5
+2025-01-09,East,Office Chair,Furniture,8,279.0,2232.0,3.3
+2025-01-10,North,Laptop Air 13,Electronics,2,1085.08,2170.16,3.3
+2025-01-11,South,Standing Desk,Furniture,7,579.65,4057.55,3.3
+2025-01-11,East,Mechanical Keyboard,Accessories,8,94.05,752.4,4.5
+2025-01-12,West,Mechanical Keyboard,Accessories,10,91.73,917.3,4.5
+2025-01-15,East,Office Chair,Furniture,7,263.08,1841.56,4.6
+2025-01-15,West,Laptop Pro 14,Electronics,2,1363.69,2727.38,4.4
+2025-01-17,East,4K Monitor,Electronics,6,431.46,2588.76,4.3
+2025-01-17,East,Standing Desk,Furniture,8,497.95,3983.6,4.1
+2025-01-17,South,Office Chair,Furniture,5,270.26,1351.3,2.9
+2025-01-17,North,Office Chair,Furniture,5,239.15,1195.75,4.7
+2025-01-18,East,Wireless Mouse,Accessories,7,38.36,268.52,4.2
+2025-01-18,North,Standing Desk,Furniture,5,546.77,2733.85,4.1
+2025-01-18,East,4K Monitor,Electronics,7,432.43,3027.01,4.2
+2025-01-18,North,Wireless Mouse,Accessories,1,31.5,31.5,3.7
+2025-01-19,East,Wireless Mouse,Accessories,11,33.93,373.23,4.5
+2025-01-19,South,Office Chair,Furniture,6,235.86,1415.16,
+2025-01-19,North,Wireless Mouse,Accessories,4,31.62,126.48,3.6
+2025-01-20,East,Laptop Pro 14,Electronics,2,1397.31,2794.62,4.8
+2025-01-20,West,Standing Desk,Furniture,4,493.76,1975.04,4.3
+2025-01-20,South,Office Chair,Furniture,5,246.52,1232.6,4.9
+2025-01-20,West,Mechanical Keyboard,Accessories,2,93.53,187.06,4.9
+2025-01-21,East,USB-C Dock,Accessories,7,141.12,987.84,3.4
+2025-01-22,East,USB-C Dock,Accessories,6,126.29,757.74,3.7
+2025-01-22,North,Office Chair,Furniture,7,261.63,1831.41,3.6
+2025-01-22,South,Laptop Pro 14,Electronics,4,1482.19,5928.76,4.1
+2025-01-23,South,4K Monitor,Electronics,1,447.33,447.33,3.3
+2025-01-23,West,4K Monitor,Electronics,7,391.04,2737.28,3.2
+2025-01-23,West,Mechanical Keyboard,Accessories,6,97.4,584.4,4.8
+2025-01-24,North,Mechanical Keyboard,Accessories,10,95.01,950.1,4.3
+2025-01-24,East,USB-C Dock,Accessories,4,124.52,498.08,5.0
+2025-01-24,South,Laptop Air 13,Electronics,1,1045.88,1045.88,3.4
+2025-01-25,West,Laptop Pro 14,Electronics,5,1449.11,7245.55,4.0
+2025-01-25,West,Standing Desk,Furniture,5,591.36,2956.8,2.6
+2025-01-25,South,Standing Desk,Furniture,10,527.59,5275.9,4.2
+2025-01-25,East,Mechanical Keyboard,Accessories,10,82.09,820.9,3.2
+2025-01-25,North,4K Monitor,Electronics,8,415.53,3324.24,4.0
+2025-01-26,East,Wireless Mouse,Accessories,1,34.54,34.54,5.0
+2025-01-26,North,Standing Desk,Furniture,11,544.54,5989.94,2.8
+2025-01-27,East,Wireless Mouse,Accessories,2,33.01,66.02,4.5
+2025-01-28,East,Wireless Mouse,Accessories,11,33.93,373.23,3.1
+2025-01-29,North,Mechanical Keyboard,Accessories,2,85.7,171.4,4.6
+2025-01-30,East,Laptop Pro 14,Electronics,10,1518.19,15181.9,4.4
+2025-01-30,North,USB-C Dock,Accessories,5,122.25,611.25,4.1
+2025-01-30,North,Office Chair,Furniture,7,258.01,1806.07,4.3
+2025-01-30,North,Laptop Pro 14,Electronics,11,1333.69,14670.59,4.1
+2025-01-30,North,Mechanical Keyboard,Accessories,9,83.11,747.99,3.9
+2025-01-30,North,Mechanical Keyboard,Accessories,2,81.09,162.18,4.2
+2025-01-31,East,USB-C Dock,Accessories,8,132.11,1056.88,4.8
+2025-01-31,South,Office Chair,Furniture,8,242.39,1939.12,4.1
+2025-02-01,West,4K Monitor,Electronics,4,418.27,1673.08,4.1
+2025-02-01,North,Laptop Air 13,Electronics,9,947.14,8524.26,4.3
+2025-02-01,North,Wireless Mouse,Accessories,1,38.45,38.45,4.6
+2025-02-01,West,Office Chair,Furniture,6,237.09,1422.54,5.0
+2025-02-01,South,Laptop Air 13,Electronics,5,1061.64,5308.2,4.0
+2025-02-02,East,Laptop Air 13,Electronics,3,1059.56,3178.68,5.0
+2025-02-02,South,4K Monitor,Electronics,1,452.97,452.97,3.9
+2025-02-03,South,Office Chair,Furniture,9,241.95,2177.55,4.4
+2025-02-03,North,USB-C Dock,Accessories,9,139.74,1257.66,5.0
+2025-02-03,North,Laptop Pro 14,Electronics,1,1326.48,1326.48,4.2
+2025-02-04,North,Wireless Mouse,Accessories,8,35.61,284.88,3.7
+2025-02-04,South,4K Monitor,Electronics,11,445.95,4905.45,5.0
+2025-02-05,North,Standing Desk,Furniture,1,491.58,491.58,2.9
+2025-02-05,East,Standing Desk,Furniture,1,503.01,503.01,3.0
+2025-02-06,North,Mechanical Keyboard,Accessories,7,85.99,601.93,4.1
+2025-02-06,North,Laptop Pro 14,Electronics,6,1318.1,7908.6,3.5
+2025-02-06,West,Office Chair,Furniture,8,257.31,2058.48,3.8
+2025-02-06,North,Standing Desk,Furniture,7,531.4,3719.8,3.1
+2025-02-06,East,Office Chair,Furniture,9,248.98,2240.82,4.7
+2025-02-07,North,Office Chair,Furniture,1,243.12,243.12,4.7
+2025-02-07,West,USB-C Dock,Accessories,2,141.62,283.24,
+2025-02-07,North,Wireless Mouse,Accessories,5,37.87,189.35,3.7
+2025-02-09,North,Laptop Air 13,Electronics,9,1007.69,9069.21,5.0
+2025-02-09,East,4K Monitor,Electronics,1,398.28,398.28,4.6
+2025-02-09,South,Standing Desk,Furniture,1,537.21,537.21,4.8
+2025-02-11,North,Wireless Mouse,Accessories,11,36.28,399.08,5.0
+2025-02-11,East,Laptop Air 13,Electronics,10,952.85,9528.5,3.7
+2025-02-12,East,Mechanical Keyboard,Accessories,1,92.16,92.16,4.4
+2025-02-12,South,Office Chair,Furniture,7,246.49,1725.43,4.2
+2025-02-13,East,Wireless Mouse,Accessories,3,37.12,111.36,4.3
+2025-02-13,North,Standing Desk,Furniture,2,550.73,1101.46,3.4
+2025-02-13,South,Laptop Pro 14,Electronics,11,1336.69,14703.59,4.2
+2025-02-14,East,Laptop Pro 14,Electronics,11,1488.93,16378.23,3.6
+2025-02-14,North,Wireless Mouse,Accessories,6,31.86,191.16,3.5
+2025-02-14,East,Laptop Pro 14,Electronics,10,1455.12,14551.2,5.0
+2025-02-14,West,Wireless Mouse,Accessories,5,32.31,161.55,4.5
+2025-02-14,West,Wireless Mouse,Accessories,10,36.71,367.1,4.0
+2025-02-14,West,Standing Desk,Furniture,8,494.4,3955.2,4.3
+2025-02-14,North,Standing Desk,Furniture,11,567.49,6242.39,4.8
+2025-02-15,North,Laptop Air 13,Electronics,11,1011.41,11125.51,4.8
+2025-02-15,North,Wireless Mouse,Accessories,5,34.42,172.1,5.0
+2025-02-15,East,Office Chair,Furniture,7,258.77,1811.39,4.9
+2025-02-15,South,Wireless Mouse,Accessories,1,35.17,35.17,3.4
+2025-02-16,South,USB-C Dock,Accessories,11,133.78,1471.58,4.4
+2025-02-16,West,Standing Desk,Furniture,7,525.05,3675.35,3.5
+2025-02-18,North,Laptop Air 13,Electronics,11,1071.69,11788.59,3.4
+2025-02-18,West,Laptop Air 13,Electronics,11,921.4,10135.4,4.3
+2025-02-18,East,Laptop Air 13,Electronics,10,911.85,9118.5,3.4
+2025-02-19,East,Office Chair,Furniture,2,264.59,529.18,3.8
+2025-02-19,South,USB-C Dock,Accessories,4,122.19,488.76,4.2
+2025-02-20,East,Wireless Mouse,Accessories,4,35.01,140.04,4.0
+2025-02-21,West,4K Monitor,Electronics,4,422.48,1689.92,2.6
+2025-02-21,West,Laptop Air 13,Electronics,4,924.2,3696.8,4.1
+2025-02-21,East,USB-C Dock,Accessories,10,137.51,1375.1,4.6
+2025-02-22,North,Standing Desk,Furniture,11,571.4,6285.4,4.1
+2025-02-22,North,Office Chair,Furniture,3,274.92,824.76,4.5
+2025-02-22,North,Wireless Mouse,Accessories,6,38.25,229.5,4.9
+2025-02-23,West,USB-C Dock,Accessories,11,121.78,1339.58,3.5
+2025-02-23,West,Laptop Pro 14,Electronics,5,1531.99,7659.95,4.6
+2025-02-23,East,Laptop Air 13,Electronics,5,939.65,4698.25,3.1
+2025-02-24,North,4K Monitor,Electronics,8,401.62,3212.96,4.3
+2025-02-24,West,Laptop Air 13,Electronics,2,947.08,1894.16,4.4
+2025-02-24,West,Wireless Mouse,Accessories,8,32.54,260.32,4.0
+2025-02-24,West,4K Monitor,Electronics,2,451.85,903.7,
+2025-02-25,North,Wireless Mouse,Accessories,7,36.76,257.32,4.5
+2025-02-26,South,Laptop Pro 14,Electronics,11,1416.16,15577.76,5.0
+2025-02-28,West,Office Chair,Furniture,10,255.67,2556.7,4.6
+2025-03-01,East,Mechanical Keyboard,Accessories,6,89.97,539.82,3.7
+2025-03-02,West,Wireless Mouse,Accessories,1,37.77,37.77,4.0
+2025-03-03,East,Laptop Pro 14,Electronics,9,1366.47,12298.23,4.2
+2025-03-03,West,Standing Desk,Furniture,6,514.71,3088.26,4.9
+2025-03-04,West,USB-C Dock,Accessories,3,131.47,394.41,4.7
+2025-03-05,North,Laptop Pro 14,Electronics,11,1424.59,15670.49,4.1
+2025-03-06,North,Mechanical Keyboard,Accessories,8,88.59,708.72,4.5
+2025-03-07,North,Mechanical Keyboard,Accessories,4,92.29,369.16,2.9
+2025-03-07,East,Wireless Mouse,Accessories,3,32.94,98.82,4.0
+2025-03-09,North,4K Monitor,Electronics,2,380.52,761.04,4.6
+2025-03-09,East,USB-C Dock,Accessories,2,127.7,255.4,4.3
+2025-03-10,West,Wireless Mouse,Accessories,11,32.36,355.96,5.0
+2025-03-10,North,Mechanical Keyboard,Accessories,3,91.73,275.19,3.6
+2025-03-11,East,Office Chair,Furniture,4,251.52,1006.08,4.7
+2025-03-11,North,Laptop Pro 14,Electronics,8,1510.35,12082.8,5.0
+2025-03-11,West,Wireless Mouse,Accessories,7,34.39,240.73,4.4
+2025-03-11,North,Laptop Pro 14,Electronics,1,1531.16,1531.16,3.6
+2025-03-12,North,Wireless Mouse,Accessories,5,35.35,176.75,3.5
+2025-03-12,East,Laptop Air 13,Electronics,2,1068.15,2136.3,4.0
+2025-03-12,West,Laptop Air 13,Electronics,2,997.17,1994.34,3.5
+2025-03-12,South,Standing Desk,Furniture,2,552.92,1105.84,3.7
+2025-03-13,North,Wireless Mouse,Accessories,9,37.57,338.13,3.8
+2025-03-13,East,Wireless Mouse,Accessories,9,36.75,330.75,5.0
+2025-03-13,East,Wireless Mouse,Accessories,3,36.82,110.46,4.6
+2025-03-13,North,Office Chair,Furniture,10,266.34,2663.4,3.8
+2025-03-13,West,Standing Desk,Furniture,3,510.59,1531.77,4.3
+2025-03-13,West,4K Monitor,Electronics,8,402.06,3216.48,3.7
+2025-03-15,East,USB-C Dock,Accessories,5,119.95,599.75,3.4
+2025-03-15,West,Mechanical Keyboard,Accessories,10,93.82,938.2,4.0
+2025-03-16,West,Mechanical Keyboard,Accessories,4,80.5,322.0,3.9
+2025-03-16,East,4K Monitor,Electronics,8,443.77,3550.16,5.0
+2025-03-16,West,Laptop Air 13,Electronics,7,1074.09,7518.63,4.6
+2025-03-16,East,Standing Desk,Furniture,5,562.98,2814.9,3.8
+2025-03-17,North,Office Chair,Furniture,2,259.45,518.9,3.2
+2025-03-20,South,Laptop Air 13,Electronics,11,1079.73,11877.03,4.3
+2025-03-20,South,Office Chair,Furniture,3,284.2,852.6,3.2
+2025-03-20,South,Office Chair,Furniture,10,269.49,2694.9,
+2025-03-20,West,Laptop Pro 14,Electronics,1,1392.28,1392.28,4.7
+2025-03-21,West,4K Monitor,Electronics,8,453.81,3630.48,3.8
+2025-03-22,North,USB-C Dock,Accessories,9,139.65,1256.85,4.4
+2025-03-22,East,Office Chair,Furniture,11,247.18,2718.98,3.4
+2025-03-22,West,Laptop Air 13,Electronics,6,1005.45,6032.7,
+2025-03-22,South,USB-C Dock,Accessories,7,118.36,828.52,3.3
+2025-03-22,East,4K Monitor,Electronics,11,436.26,4798.86,3.6
+2025-03-22,North,Laptop Pro 14,Electronics,2,1451.31,2902.62,4.9
+2025-03-23,East,4K Monitor,Electronics,10,389.07,3890.7,4.1
+2025-03-23,North,Mechanical Keyboard,Accessories,7,83.44,584.08,4.4
+2025-03-24,North,Office Chair,Furniture,5,272.37,1361.85,4.1
+2025-03-24,North,Laptop Air 13,Electronics,6,948.24,5689.44,3.2
+2025-03-24,North,USB-C Dock,Accessories,4,131.22,524.88,4.0
+2025-03-24,East,Laptop Air 13,Electronics,9,1071.31,9641.79,4.4
+2025-03-24,North,Office Chair,Furniture,7,278.54,1949.78,4.1
+2025-03-25,East,Laptop Air 13,Electronics,2,984.28,1968.56,3.1
+2025-03-25,North,USB-C Dock,Accessories,5,120.84,604.2,3.5
+2025-03-25,South,Laptop Air 13,Electronics,4,1023.62,4094.48,4.5
+2025-03-26,North,Laptop Pro 14,Electronics,11,1446.0,15906.0,4.0
+2025-03-27,North,4K Monitor,Electronics,4,395.98,1583.92,3.5
+2025-03-27,East,USB-C Dock,Accessories,7,130.77,915.39,3.9
+2025-03-27,East,Laptop Air 13,Electronics,4,1020.28,4081.12,3.8
+2025-03-28,West,Wireless Mouse,Accessories,3,37.18,111.54,2.7
+2025-03-28,North,Standing Desk,Furniture,3,518.59,1555.77,4.0
+2025-03-28,West,USB-C Dock,Accessories,8,126.73,1013.84,4.3
+2025-03-28,South,Wireless Mouse,Accessories,5,33.79,168.95,4.1
+2025-03-28,West,USB-C Dock,Accessories,4,117.35,469.4,3.4
+2025-03-29,South,Wireless Mouse,Accessories,6,38.06,228.36,3.5
+2025-03-30,North,Laptop Air 13,Electronics,1,893.91,893.91,2.9
+2025-03-31,East,Laptop Air 13,Electronics,4,1064.59,4258.36,4.2
+2025-03-31,North,Office Chair,Furniture,10,248.59,2485.9,4.4
+2025-03-31,East,Office Chair,Furniture,5,240.66,1203.3,4.4
+2025-03-31,South,USB-C Dock,Accessories,4,131.17,524.68,4.0
+2025-03-31,North,Laptop Air 13,Electronics,3,1004.1,3012.3,4.3
+2025-04-01,West,Laptop Pro 14,Electronics,5,1487.94,7439.7,3.6
+2025-04-01,North,Laptop Pro 14,Electronics,9,1520.98,13688.82,3.9
+2025-04-01,East,Laptop Pro 14,Electronics,2,1335.71,2671.42,4.2
+2025-04-02,East,Mechanical Keyboard,Accessories,7,92.0,644.0,4.1
+2025-04-02,North,Laptop Pro 14,Electronics,5,1311.71,6558.55,5.0
+2025-04-02,East,Mechanical Keyboard,Accessories,5,95.07,475.35,4.0
+2025-04-03,North,Mechanical Keyboard,Accessories,5,87.21,436.05,3.6
+2025-04-03,East,Laptop Air 13,Electronics,11,994.01,10934.11,3.6
+2025-04-04,South,Wireless Mouse,Accessories,8,32.16,257.28,5.0
+2025-04-04,East,Laptop Air 13,Electronics,5,964.57,4822.85,4.7
+2025-04-05,South,USB-C Dock,Accessories,4,120.48,481.92,3.6
+2025-04-05,North,USB-C Dock,Accessories,8,116.13,929.04,3.3
+2025-04-05,East,4K Monitor,Electronics,6,456.22,2737.32,4.5
+2025-04-06,South,USB-C Dock,Accessories,11,135.11,1486.21,4.2
+2025-04-06,East,Mechanical Keyboard,Accessories,6,90.19,541.14,4.0
+2025-04-07,West,Wireless Mouse,Accessories,11,35.68,392.48,4.5
+2025-04-07,South,USB-C Dock,Accessories,5,117.73,588.65,3.1
+2025-04-07,East,Mechanical Keyboard,Accessories,9,97.78,880.02,3.9
+2025-04-07,North,4K Monitor,Electronics,4,391.55,1566.2,3.6
+2025-04-08,West,Mechanical Keyboard,Accessories,11,88.0,968.0,4.6
+2025-04-08,North,Office Chair,Furniture,10,264.9,2649.0,4.1
+2025-04-09,North,Mechanical Keyboard,Accessories,11,89.37,983.07,3.7
+2025-04-10,West,Office Chair,Furniture,8,285.97,2287.76,4.1
+2025-04-11,South,4K Monitor,Electronics,1,396.03,396.03,4.0
+2025-04-11,North,Mechanical Keyboard,Accessories,9,97.06,873.54,4.3
+2025-04-14,West,Mechanical Keyboard,Accessories,1,91.12,91.12,4.4
+2025-04-15,North,Wireless Mouse,Accessories,5,34.87,174.35,3.9
+2025-04-15,South,Laptop Air 13,Electronics,6,990.15,5940.9,4.6
+2025-04-16,North,Standing Desk,Furniture,6,506.06,3036.36,3.9
+2025-04-16,South,4K Monitor,Electronics,11,394.53,4339.83,4.1
+2025-04-19,East,Wireless Mouse,Accessories,5,37.29,186.45,3.6
+2025-04-19,North,USB-C Dock,Accessories,4,116.87,467.48,3.0
+2025-04-19,East,Standing Desk,Furniture,9,582.15,5239.35,5.0
+2025-04-20,East,Laptop Air 13,Electronics,2,1035.22,2070.44,4.7
+2025-04-20,West,Laptop Pro 14,Electronics,8,1436.63,11493.04,5.0
+2025-04-21,North,Office Chair,Furniture,10,262.32,2623.2,4.5
+2025-04-22,North,Standing Desk,Furniture,7,559.23,3914.61,4.3
+2025-04-23,West,Office Chair,Furniture,7,275.38,1927.66,4.4
+2025-04-23,North,4K Monitor,Electronics,11,391.83,4310.13,3.8
+2025-04-23,West,Office Chair,Furniture,1,272.09,272.09,3.4
+2025-04-24,East,USB-C Dock,Accessories,9,129.93,1169.37,4.2
+2025-04-24,South,USB-C Dock,Accessories,1,117.17,117.17,4.9
+2025-04-24,East,Wireless Mouse,Accessories,7,34.36,240.52,4.7
+2025-04-24,South,Standing Desk,Furniture,1,559.58,559.58,3.7
+2025-04-25,East,Laptop Pro 14,Electronics,3,1554.61,4663.83,4.1
+2025-04-25,West,USB-C Dock,Accessories,5,131.48,657.4,3.6
+2025-04-25,South,Wireless Mouse,Accessories,6,32.6,195.6,4.3
+2025-04-26,North,Mechanical Keyboard,Accessories,10,83.78,837.8,4.4
+2025-04-26,South,Wireless Mouse,Accessories,6,35.52,213.12,3.1
+2025-04-26,East,Wireless Mouse,Accessories,4,36.2,144.8,3.7
+2025-04-27,West,Mechanical Keyboard,Accessories,7,96.27,673.89,3.8
+2025-04-28,North,Office Chair,Furniture,4,236.87,947.48,5.0
+2025-04-28,North,Mechanical Keyboard,Accessories,5,81.73,408.65,4.5
+2025-04-29,East,Laptop Pro 14,Electronics,7,1545.28,10816.96,5.0
+2025-04-29,West,Laptop Pro 14,Electronics,2,1543.71,3087.42,3.9
+2025-04-30,North,Laptop Air 13,Electronics,8,1068.88,8551.04,4.2
+2025-04-30,North,USB-C Dock,Accessories,6,132.04,792.24,3.2
+2025-05-01,South,Laptop Pro 14,Electronics,6,1593.68,9562.08,4.4
+2025-05-02,East,USB-C Dock,Accessories,8,118.88,951.04,3.8
+2025-05-02,West,4K Monitor,Electronics,4,403.11,1612.44,2.9
+2025-05-03,South,Mechanical Keyboard,Accessories,3,83.24,249.72,4.0
+2025-05-04,North,Wireless Mouse,Accessories,11,37.06,407.66,5.0
+2025-05-04,West,Standing Desk,Furniture,6,577.92,3467.52,4.3
+2025-05-04,South,Mechanical Keyboard,Accessories,4,88.46,353.84,4.8
+2025-05-05,North,Standing Desk,Furniture,7,545.86,3821.02,5.0
+2025-05-06,West,4K Monitor,Electronics,5,411.71,2058.55,4.5
+2025-05-06,South,Mechanical Keyboard,Accessories,2,82.49,164.98,4.2
+2025-05-06,East,Office Chair,Furniture,9,272.43,2451.87,4.1
+2025-05-07,North,Office Chair,Furniture,2,285.93,571.86,3.6
+2025-05-07,South,Mechanical Keyboard,Accessories,5,80.13,400.65,4.5
+2025-05-07,East,Wireless Mouse,Accessories,7,34.15,239.05,3.2
+2025-05-07,East,Wireless Mouse,Accessories,9,34.65,311.85,4.0
+2025-05-08,South,Wireless Mouse,Accessories,7,35.04,245.28,3.3
+2025-05-08,West,Mechanical Keyboard,Accessories,1,95.01,95.01,4.3
+2025-05-08,East,4K Monitor,Electronics,4,424.13,1696.52,3.4
+2025-05-08,North,4K Monitor,Electronics,1,427.58,427.58,3.0
+2025-05-09,East,4K Monitor,Electronics,1,381.56,381.56,4.0
+2025-05-11,North,Office Chair,Furniture,3,259.88,779.64,4.2
+2025-05-11,North,USB-C Dock,Accessories,7,128.2,897.4,3.9
+2025-05-12,West,Office Chair,Furniture,4,264.88,1059.52,4.1
+2025-05-12,South,Standing Desk,Furniture,3,522.98,1568.94,3.9
+2025-05-12,South,USB-C Dock,Accessories,11,129.38,1423.18,4.0
+2025-05-12,West,USB-C Dock,Accessories,2,136.76,273.52,5.0
+2025-05-13,North,Mechanical Keyboard,Accessories,6,83.4,500.4,4.9
+2025-05-13,West,Mechanical Keyboard,Accessories,2,95.51,191.02,3.6
+2025-05-14,North,Laptop Pro 14,Electronics,1,1324.0,1324.0,3.6
+2025-05-14,East,Office Chair,Furniture,3,283.95,851.85,4.6
+2025-05-14,South,Office Chair,Furniture,7,234.93,1644.51,4.8
+2025-05-15,South,USB-C Dock,Accessories,10,120.06,1200.6,3.7
+2025-05-15,North,4K Monitor,Electronics,11,418.54,4603.94,4.3
+2025-05-15,East,Standing Desk,Furniture,5,581.86,2909.3,4.2
+2025-05-15,East,4K Monitor,Electronics,6,399.27,2395.62,3.9
+2025-05-16,North,USB-C Dock,Accessories,4,125.55,502.2,4.9
+2025-05-16,East,Wireless Mouse,Accessories,1,34.93,34.93,4.6
+2025-05-16,South,Office Chair,Furniture,6,278.52,1671.12,4.2
+2025-05-16,East,Wireless Mouse,Accessories,7,33.91,237.37,3.6
+2025-05-16,West,4K Monitor,Electronics,2,390.97,781.94,5.0
+2025-05-18,North,4K Monitor,Electronics,11,453.27,4985.97,3.3
+2025-05-18,East,Mechanical Keyboard,Accessories,10,83.56,835.6,4.4
+2025-05-18,West,Mechanical Keyboard,Accessories,7,84.33,590.31,2.7
+2025-05-19,South,Mechanical Keyboard,Accessories,10,86.54,865.4,4.2
+2025-05-19,West,4K Monitor,Electronics,9,412.66,3713.94,3.6
+2025-05-20,North,Office Chair,Furniture,3,263.7,791.1,2.8
+2025-05-20,East,Laptop Air 13,Electronics,11,937.58,10313.38,3.7
+2025-05-20,East,Standing Desk,Furniture,9,553.55,4981.95,4.7
+2025-05-21,East,Laptop Air 13,Electronics,1,991.44,991.44,3.3
+2025-05-21,North,Office Chair,Furniture,8,268.62,2148.96,4.2
+2025-05-22,North,Wireless Mouse,Accessories,9,37.39,336.51,3.3
+2025-05-22,West,Mechanical Keyboard,Accessories,1,92.74,92.74,4.2
+2025-05-22,East,USB-C Dock,Accessories,11,140.64,1547.04,4.4
+2025-05-23,North,Laptop Pro 14,Electronics,6,1426.4,8558.4,3.8
+2025-05-23,East,Wireless Mouse,Accessories,10,33.13,331.3,4.0
+2025-05-23,South,USB-C Dock,Accessories,2,124.33,248.66,3.5
+2025-05-23,East,Standing Desk,Furniture,5,515.2,2576.0,3.8
+2025-05-24,West,USB-C Dock,Accessories,10,124.21,1242.1,4.2
+2025-05-24,West,USB-C Dock,Accessories,4,116.72,466.88,4.3
+2025-05-25,North,4K Monitor,Electronics,11,385.61,4241.71,5.0
+2025-05-26,South,Standing Desk,Furniture,6,590.86,3545.16,4.2
+2025-05-26,South,Standing Desk,Furniture,9,534.71,4812.39,5.0
+2025-05-27,North,Mechanical Keyboard,Accessories,6,93.36,560.16,4.2
+2025-05-27,East,USB-C Dock,Accessories,11,127.06,1397.66,2.4
+2025-05-28,North,Wireless Mouse,Accessories,11,34.51,379.61,3.1
+2025-05-28,North,Mechanical Keyboard,Accessories,7,94.78,663.46,3.5
+2025-05-28,West,Standing Desk,Furniture,5,554.93,2774.65,5.0
+2025-05-29,West,Laptop Air 13,Electronics,9,988.27,8894.43,4.0
+2025-05-29,North,Office Chair,Furniture,10,283.15,2831.5,3.8
+2025-05-29,South,Laptop Air 13,Electronics,2,968.63,1937.26,2.8
+2025-05-31,West,USB-C Dock,Accessories,2,122.93,245.86,3.9
+2025-05-31,East,Laptop Pro 14,Electronics,6,1419.15,8514.9,4.3
+2025-06-01,South,Mechanical Keyboard,Accessories,1,91.56,91.56,4.8
+2025-06-02,East,USB-C Dock,Accessories,10,139.57,1395.7,3.6
+2025-06-02,East,Mechanical Keyboard,Accessories,8,81.13,649.04,3.5
+2025-06-03,North,Office Chair,Furniture,4,276.8,1107.2,4.0
+2025-06-03,South,Wireless Mouse,Accessories,1,36.91,36.91,5.0
+2025-06-03,North,Office Chair,Furniture,10,266.18,2661.8,4.2
+2025-06-03,East,Standing Desk,Furniture,11,561.4,6175.4,4.9
+2025-06-03,West,Standing Desk,Furniture,2,520.12,1040.24,4.2
+2025-06-03,East,Laptop Pro 14,Electronics,2,1532.04,3064.08,4.8
+2025-06-05,West,Mechanical Keyboard,Accessories,3,94.23,282.69,4.9
+2025-06-05,East,4K Monitor,Electronics,11,444.03,4884.33,4.1
+2025-06-05,East,Wireless Mouse,Accessories,6,37.65,225.9,4.1
+2025-06-05,East,Office Chair,Furniture,2,252.44,504.88,4.8
+2025-06-05,East,Laptop Pro 14,Electronics,4,1548.36,6193.44,4.1
+2025-06-06,South,USB-C Dock,Accessories,1,132.44,132.44,3.9
+2025-06-06,North,USB-C Dock,Accessories,7,119.67,837.69,4.3
+2025-06-07,North,Laptop Air 13,Electronics,5,996.85,4984.25,3.5
+2025-06-07,North,Standing Desk,Furniture,7,502.59,3518.13,3.8
+2025-06-09,North,Laptop Air 13,Electronics,4,1008.72,4034.88,4.4
+2025-06-09,South,Office Chair,Furniture,1,258.88,258.88,4.3
+2025-06-09,North,Laptop Pro 14,Electronics,10,1539.88,15398.8,3.7
+2025-06-10,East,USB-C Dock,Accessories,4,136.93,547.72,5.0
+2025-06-12,West,Office Chair,Furniture,4,281.78,1127.12,3.5
+2025-06-14,North,Office Chair,Furniture,3,240.81,722.43,4.4
+2025-06-14,North,4K Monitor,Electronics,4,389.34,1557.36,3.7
+2025-06-14,South,Laptop Air 13,Electronics,1,1007.12,1007.12,2.7
+2025-06-16,North,Laptop Air 13,Electronics,3,899.84,2699.52,3.2
+2025-06-16,East,USB-C Dock,Accessories,6,131.57,789.42,4.4
+2025-06-16,North,4K Monitor,Electronics,7,435.16,3046.12,4.3
+2025-06-17,North,4K Monitor,Electronics,5,424.59,2122.95,3.5
+2025-06-17,West,Laptop Air 13,Electronics,7,947.37,6631.59,4.0
+2025-06-17,West,Office Chair,Furniture,10,275.71,2757.1,4.3
+2025-06-17,West,Standing Desk,Furniture,1,528.39,528.39,4.3
+2025-06-17,North,USB-C Dock,Accessories,8,129.65,1037.2,4.5
+2025-06-18,North,Laptop Air 13,Electronics,7,959.14,6713.98,3.5
+2025-06-19,East,Laptop Air 13,Electronics,6,966.44,5798.64,3.8
+2025-06-19,East,Laptop Pro 14,Electronics,10,1520.98,15209.8,4.4
+2025-06-19,North,4K Monitor,Electronics,4,394.4,1577.6,3.7
+2025-06-19,West,Wireless Mouse,Accessories,5,37.74,188.7,5.0
+2025-06-21,East,Office Chair,Furniture,4,278.13,1112.52,4.4
+2025-06-21,East,Mechanical Keyboard,Accessories,5,92.91,464.55,4.2
+2025-06-21,East,Laptop Pro 14,Electronics,2,1354.67,2709.34,4.8
+2025-06-22,East,Standing Desk,Furniture,4,496.47,1985.88,3.1
+2025-06-22,North,4K Monitor,Electronics,7,385.1,2695.7,3.2
+2025-06-23,North,Standing Desk,Furniture,9,559.22,5032.98,4.0
+2025-06-23,East,Mechanical Keyboard,Accessories,4,92.66,370.64,3.9
+2025-06-24,East,Office Chair,Furniture,11,280.64,3087.04,3.1
+2025-06-25,North,Standing Desk,Furniture,1,500.24,500.24,4.5
+2025-06-25,South,Mechanical Keyboard,Accessories,1,96.45,96.45,4.3
+2025-06-25,South,Mechanical Keyboard,Accessories,6,90.57,543.42,3.4
+2025-06-25,South,Wireless Mouse,Accessories,2,32.66,65.32,4.7
+2025-06-25,East,Laptop Pro 14,Electronics,11,1473.52,16208.72,3.6
+2025-06-25,East,Mechanical Keyboard,Accessories,8,97.7,781.6,4.3
+2025-06-25,North,4K Monitor,Electronics,3,453.84,1361.52,3.7
+2025-06-25,North,Office Chair,Furniture,4,245.01,980.04,4.7
+2025-06-26,North,Laptop Air 13,Electronics,2,964.44,1928.88,3.6
+2025-06-26,North,Laptop Air 13,Electronics,5,1024.11,5120.55,3.4
+2025-06-27,North,Office Chair,Furniture,4,236.98,947.92,4.5
+2025-06-27,West,Standing Desk,Furniture,9,563.84,5074.56,3.4
+2025-06-27,North,Wireless Mouse,Accessories,6,37.26,223.56,4.0
+2025-06-29,East,4K Monitor,Electronics,10,443.05,4430.5,
+2025-06-29,North,Laptop Pro 14,Electronics,3,1550.87,4652.61,3.5
+2025-06-29,North,Office Chair,Furniture,10,248.63,2486.3,4.2
+2025-06-30,North,Standing Desk,Furniture,5,550.04,2750.2,5.0
+2025-06-30,West,4K Monitor,Electronics,1,380.44,380.44,3.7
+2025-06-30,North,Standing Desk,Furniture,5,550.04,2750.2,5.0
+2025-02-23,West,USB-C Dock,Accessories,11,121.78,1339.58,3.5
+2025-05-28,North,Mechanical Keyboard,Accessories,7,94.78,663.46,3.5

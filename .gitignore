@@ -1,0 +1,21 @@
+# Environment / secrets
+backend/.env
+.env
+
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node / Next.js
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/next-env.d.ts
+
+# App data (uploads, runs, charts, reports, SQLite DB)
+storage/
+
+# OS
+.DS_Store
