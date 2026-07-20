@@ -1,0 +1,19 @@
+# Frontend (Next.js) deploys to Netlify. The FastAPI backend cannot run here —
+# it deploys separately to Render (see render.yaml and README "Deployment").
+#
+# Required Netlify UI env var (Site configuration → Environment variables):
+#   NEXT_PUBLIC_API_BASE = https://<your-backend>.onrender.com   (no trailing slash)
+# It is baked into the bundle at BUILD time — after changing it, use
+# "Clear cache and deploy site".
+
+[build]
+  base = "frontend"
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # Next.js 16 requires Node >= 20.9
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

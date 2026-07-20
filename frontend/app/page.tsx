@@ -7,6 +7,7 @@ import DatasetCard from "@/components/DatasetCard";
 import StatusBadge from "@/components/StatusBadge";
 import UploadZone from "@/components/UploadZone";
 import {
+  API_BASE,
   createAnalysis,
   type Dataset,
   getDataset,
@@ -20,6 +21,59 @@ const EXAMPLES = [
   "Find correlations between the numeric columns and flag any outliers.",
   "Summarize the dataset and highlight data quality issues.",
 ];
+
+function BackendDownBanner() {
+  const isLocalhost = /^https?:\/\/localhost/i.test(API_BASE);
+  const isBrowserLocalhost =
+    typeof window !== "undefined" &&
+    window.location.hostname !== "localhost" &&
+    window.location.hostname !== "127.0.0.1";
+
+  return (
+    <div className="rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+      <div>
+        Cannot reach the backend at{" "}
+        <code className="rounded bg-amber-100 px-1 break-all">{API_BASE}</code>.
+      </div>
+      {isLocalhost && isBrowserLocalhost ? (
+        <div className="mt-2">
+          This deployed site was built without{" "}
+          <code className="rounded bg-amber-100 px-1">NEXT_PUBLIC_API_BASE</code>{" "}
+          set, so it is trying to call your own machine. Set the variable on
+          Netlify to your backend URL (e.g.{" "}
+          <code className="rounded bg-amber-100 px-1">
+            https://your-service.onrender.com
+          </code>
+          ) and redeploy with <em>Clear cache and deploy site</em>.
+        </div>
+      ) : isLocalhost ? (
+        <div className="mt-2">
+          Start the backend with{" "}
+          <code className="rounded bg-amber-100 px-1">
+            uvicorn app.main:app --port 8000
+          </code>{" "}
+          in <code className="rounded bg-amber-100 px-1">backend/</code>.
+        </div>
+      ) : (
+        <div className="mt-2">
+          Check that the backend service is running, that{" "}
+          <code className="rounded bg-amber-100 px-1">CORS_ORIGINS</code>{" "}
+          includes this site&apos;s origin (
+          <code className="rounded bg-amber-100 px-1 break-all">
+            {typeof window !== "undefined" ? window.location.origin : ""}
+          </code>
+          ), and that{" "}
+          <code className="rounded bg-amber-100 px-1">
+            {API_BASE}/api/health
+          </code>{" "}
+          returns 200. On Render&apos;s free tier the first request after ~15
+          min of idle can take up to 50 s to cold-start &mdash; try again in a
+          moment.
+        </div>
+      )}
+    </div>
+  );
+}
 
 export default function Home() {
   const router = useRouter();
@@ -64,15 +118,7 @@ export default function Home() {
 
   return (
     <div className="space-y-8">
-      {backendDown && (
-        <div className="rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-800">
-          Cannot reach the backend at the API URL. Start it with{" "}
-          <code className="rounded bg-amber-100 px-1">
-            uvicorn app.main:app --port 8000
-          </code>{" "}
-          in <code className="rounded bg-amber-100 px-1">backend/</code>.
-        </div>
-      )}
+      {backendDown && <BackendDownBanner />}
 
       <section>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900">

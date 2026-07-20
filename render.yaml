@@ -1,0 +1,31 @@
+# Backend (FastAPI) deploys to Render as a Blueprint: dashboard → New → Blueprint,
+# point it at this repo. The Next.js frontend deploys separately to Netlify
+# (see netlify.toml and README "Deployment").
+services:
+  - type: web
+    name: autoanalyst-backend
+    runtime: python
+    plan: free            # free tier: no persistent disk, spins down after ~15 min idle, 512 MB RAM
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.9
+      - key: OPENAI_API_KEY
+        sync: false        # set in the Render dashboard; never committed
+      - key: CORS_ORIGINS
+        value: https://YOUR-SITE.netlify.app   # replace with your Netlify URL after the first frontend deploy
+      - key: STORAGE_DIR
+        value: /opt/render/project/src/storage # ephemeral on the free tier — wiped on every deploy/restart
+      - key: EXEC_MEMORY_MB
+        value: "380"       # free tier has 512 MB total; the 2048 default would let executed scripts OOM the container
+      - key: EXEC_TIMEOUT_SECONDS
+        value: "60"
+    # --- Persistent storage (paid plans only; the free tier does not support disks) ---
+    # disk:
+    #   name: autoanalyst-storage
+    #   mountPath: /var/data
+    #   sizeGB: 1
+    # ...and change STORAGE_DIR above to /var/data/storage

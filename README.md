@@ -84,6 +84,66 @@ All settings live in `backend/.env` (see `backend/.env.example`):
 | `MAX_PLAN_STEPS` | `6` | Max steps in an analysis plan |
 | `CORS_ORIGINS` | `http://localhost:3000` | Allowed frontend origins |
 
+## Deployment
+
+This is **two apps**: a Next.js frontend and a FastAPI (Python) backend. Static
+hosts like Netlify and Firebase Hosting can only serve the frontend — the
+backend needs a real Python server (persistent process, disk storage, subprocess
+sandboxing, SSE streaming). Deploying only the repo to Netlify/Firebase produces
+a site that loads but cannot reach its API.
+
+The supported setup: **frontend on Netlify** (config in `netlify.toml`),
+**backend on Render** (config in `render.yaml`). Deploy in this order:
+
+### 1. Backend → Render
+
+1. Render dashboard → **New → Blueprint** → select this repo. Render reads
+   `render.yaml` and creates the `autoanalyst-backend` web service.
+2. Set `OPENAI_API_KEY` when prompted (it is never committed).
+3. After the deploy, note the service URL, e.g. `https://autoanalyst-backend.onrender.com`,
+   and check `https://<name>.onrender.com/api/health` returns `{"status": "ok", ...}`
+   with `openai_configured: true`.
+
+### 2. Frontend → Netlify
+
+1. Netlify → **Add new site → Import an existing project** → select this repo.
+   `netlify.toml` supplies the base directory (`frontend`), build command, and
+   Next.js runtime — no manual build settings needed.
+2. **Before deploying**, add the environment variable
+   `NEXT_PUBLIC_API_BASE = https://<name>.onrender.com` (no trailing slash) under
+   *Site configuration → Environment variables*. This value is **baked into the
+   JavaScript bundle at build time** — if you add or change it later, you must
+   redeploy with **"Clear cache and deploy site"**.
+
+### 3. Close the loop (CORS)
+
+On the Render service, set `CORS_ORIGINS` to your Netlify URL, e.g.
+`CORS_ORIGINS=https://your-site.netlify.app` (comma-separate to allow several
+origins). Render redeploys automatically.
+
+### Why a plain deploy is broken
+
+- `frontend/lib/api.ts` falls back to `http://localhost:8000` when
+  `NEXT_PUBLIC_API_BASE` is unset at **build time** — the deployed site then
+  tries to call an API on each visitor's own machine, so every request fails.
+- Even with the right API base, the backend's `CORS_ORIGINS` default only allows
+  `http://localhost:3000`, so the browser blocks responses from any deployed
+  frontend origin.
+
+### Free-tier caveats (Render)
+
+- **No persistent disk**: uploads, run history, reports, and the SQLite DB are
+  wiped on every deploy/restart. Upgrade to the Starter plan and uncomment the
+  `disk:` block in `render.yaml` (setting `STORAGE_DIR=/var/data/storage`) for
+  durable storage.
+- **Cold starts**: the service spins down after ~15 min idle; the first request
+  after that takes ~50 s.
+- **512 MB RAM**: `render.yaml` lowers `EXEC_MEMORY_MB` to 380 so executed
+  analysis scripts can't OOM the container.
+- **No PDF export**: WeasyPrint's system libraries (pango) can't be installed on
+  Render's native Python runtime; reports fall back to Markdown/HTML. If you
+  need PDFs, deploy with `backend/Dockerfile` instead (see its header comment).
+
 ## Security model
 
 AI-generated code is treated as untrusted:
