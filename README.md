@@ -4,6 +4,8 @@ An AI-powered data analysis platform: upload a dataset, ask a question in plain
 English, and get an AI-generated analysis plan, automatically written & executed
 Python analysis, charts, grounded insights, and a downloadable report.
 
+![AI-powered data analysis workflow: from upload to insights & report](docs/workflow.png)
+
 ## How it works
 
 ```
