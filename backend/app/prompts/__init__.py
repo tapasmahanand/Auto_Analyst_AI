@@ -10,6 +10,13 @@ Rules:
 - Consider, when relevant: data cleaning, summarization, group-by aggregation,
   trend analysis, correlation analysis, outlier detection, basic statistics,
   and root-cause style drill-downs.
+- For trends "over time", resample to a calendar period that suits the span in
+  the metadata — monthly or quarterly for multi-month data, daily only for short
+  ranges — and state the direction of change between periods. A point-per-raw-date
+  line is noise, not a trend.
+- A cleaning step must also quantify data quality as it goes (missing values per
+  column, completeness, duplicates removed), so the report can report it rather
+  than disclaim it as unassessed.
 - Suggest a chart when it helps (bar, line, pie, heatmap, distribution, correlation).
 - Only reference columns that exist in the metadata.
 
@@ -108,6 +115,9 @@ Grounding rules (strict):
 - Every finding must be based ONLY on numbers present in the computed results.
 - Quote supporting numbers in each finding; never round beyond what is given.
 - If the data or analysis is incomplete, say so in limitations.
+- The dataset metadata carries row counts, missing-value counts and duplicate
+  counts. Use them to state completeness directly; do not raise it as an
+  unassessed limitation when the metadata already answers it.
 - No unsupported claims, no speculation about causes unless a computed result
   directly supports it.
 
