@@ -1,3 +1,4 @@
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
@@ -38,4 +39,8 @@ def health() -> dict:
             settings.openai_api_key and not settings.openai_api_key.startswith("sk-...")
         ),
         "model": settings.openai_model,
+        # Which build is actually serving — without this there is no way to tell
+        # whether a pushed fix is live yet. Render sets RENDER_GIT_COMMIT.
+        "commit": (os.getenv("RENDER_GIT_COMMIT") or os.getenv("GIT_COMMIT") or "unknown")[:12],
+        "exec_memory_mb": settings.exec_memory_mb,
     }
