@@ -63,6 +63,11 @@ RESULT_END = "===RESULT_JSON_END==="
 
 MAX_OUTPUT_CHARS = 20_000
 
+# RLIMIT_AS caps *virtual* address space, and the scientific stack reserves far
+# more of it than it ever resides in. Anything below this floor makes `import
+# matplotlib` itself die with MemoryError, so every script fails at line 1.
+MIN_MEMORY_MB = 1024
+
 
 @dataclass
 class ExecutionResult:
@@ -104,7 +109,7 @@ def _limit_resources(cpu_seconds: int, memory_mb: int):
     def _apply():
         resource.setrlimit(resource.RLIMIT_CPU, (cpu_seconds, cpu_seconds + 5))
         # Address-space cap is best-effort (not enforced on macOS, works on Linux).
-        limit = memory_mb * 1024 * 1024
+        limit = max(memory_mb, MIN_MEMORY_MB) * 1024 * 1024
         try:
             resource.setrlimit(resource.RLIMIT_AS, (limit, limit))
         except (ValueError, OSError):
@@ -163,6 +168,13 @@ def run_code(
         "MPLBACKEND": "Agg",
         "MPLCONFIGDIR": str(workdir / ".mpl"),
         "PYTHONDONTWRITEBYTECODE": "1",
+        # Single-threaded BLAS: the per-thread buffers OpenBLAS reserves scale
+        # with the host's CPU count, which on a shared container is both wasteful
+        # and the main driver of the address space these imports need.
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
     }
 
     try:

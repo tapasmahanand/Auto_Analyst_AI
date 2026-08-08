@@ -165,7 +165,7 @@ All settings live in `backend/.env` (see `backend/.env.example`):
 | `OPENAI_MODEL` | `gpt-4o` | Model for planning/codegen/review/insights |
 | `MAX_UPLOAD_MB` | `50` | Upload size limit |
 | `EXEC_TIMEOUT_SECONDS` | `60` | Wall-clock limit per generated script |
-| `EXEC_MEMORY_MB` | `2048` | Memory cap per generated script |
+| `EXEC_MEMORY_MB` | `2048` | Address-space cap per generated script (floored at 1024; below that numpy/matplotlib cannot import) |
 | `MAX_CODE_RETRIES` | `3` | AI fix attempts for failing code |
 | `MAX_PLAN_STEPS` | `6` | Max steps in an analysis plan |
 | `CORS_ORIGINS` | `http://localhost:3000` | Allowed frontend origins |
@@ -224,8 +224,11 @@ origins). Render redeploys automatically.
   durable storage.
 - **Cold starts**: the service spins down after ~15 min idle; the first request
   after that takes ~50 s.
-- **512 MB RAM**: `render.yaml` lowers `EXEC_MEMORY_MB` to 380 so executed
-  analysis scripts can't OOM the container.
+- **512 MB RAM**: keep `EXEC_MEMORY_MB` at its default. It caps *virtual*
+  address space, not resident memory, and pandas/numpy/matplotlib reserve far
+  more of it than they use — setting it near the container's RAM makes every
+  generated script die with `MemoryError` on `import matplotlib`. Runaway
+  scripts are bounded by `EXEC_TIMEOUT_SECONDS` and the container instead.
 - **No PDF export**: WeasyPrint's system libraries (pango) can't be installed on
   Render's native Python runtime; reports fall back to Markdown/HTML. If you
   need PDFs, deploy with `backend/Dockerfile` instead (see its header comment).

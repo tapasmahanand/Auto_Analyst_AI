@@ -20,7 +20,9 @@ services:
       - key: STORAGE_DIR
         value: /opt/render/project/src/storage # ephemeral on the free tier — wiped on every deploy/restart
       - key: EXEC_MEMORY_MB
-        value: "380"       # free tier has 512 MB total; the 2048 default would let executed scripts OOM the container
+        value: "2048"      # caps virtual address space, not RSS — must stay well above the
+                           # container's RAM or numpy/matplotlib cannot even import (MemoryError).
+                           # Runaway scripts are bounded by EXEC_TIMEOUT_SECONDS and the container itself.
       - key: EXEC_TIMEOUT_SECONDS
         value: "60"
     # --- Persistent storage (paid plans only; the free tier does not support disks) ---
