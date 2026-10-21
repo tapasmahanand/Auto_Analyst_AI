@@ -8,6 +8,16 @@ Python analysis, charts, grounded insights, and a downloadable report.
 
 ## How it works
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/workflow-diagram-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="docs/workflow-diagram-light.svg">
+  <img alt="AutoAnalyst AI analysis workflow across three lanes. User: upload dataset, ask question. FastAPI backend: inspect data, sandbox run, report. OpenAI: plan, write Python, fix code, review, insights. Sandbox errors go to Fix code and retry; successful runs go to Review, then Insights, then the Report." src="docs/workflow-diagram-light.svg" width="100%">
+</picture>
+
+An interactive version of this diagram (light/dark themes, animated flow,
+search, and image export) is in [`docs/workflow-diagram.html`](docs/workflow-diagram.html);
+download it and open it in a browser.
+
 ```
 Upload (CSV/Excel/JSON/TXT/PDF)
    └─► Dataset inspection (rows, columns, dtypes, missing values, duplicates,
